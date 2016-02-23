@@ -60,6 +60,120 @@
 		2089E43C17D9A58000F451DA /* GTTagSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2089E43B17D9A58000F451DA /* GTTagSpec.m */; };
 		20F43DE318A2F668007D3621 /* GTRepository+Blame.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F43DE118A2F667007D3621 /* GTRepository+Blame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20F43DE618A2F668007D3621 /* GTRepository+Blame.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F43DE218A2F667007D3621 /* GTRepository+Blame.m */; };
+		23A3508F1C7C7BCD00872F8F /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A350851C7C7BCD00872F8F /* ObjectiveGit.framework */; };
+		23A350A31C7C7C6000872F8F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A350A21C7C7C6000872F8F /* libiconv.tbd */; };
+		23A350A51C7C7C6900872F8F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A350A41C7C7C6900872F8F /* libz.tbd */; };
+		23A350A61C7C7CC000872F8F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F2FD317C6A8F3003DFADE /* libcrypto.a */; };
+		23A350A71C7C7CC000872F8F /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F2FD417C6A8F3003DFADE /* libssl.a */; };
+		23A350A81C7C7CD100872F8F /* libssh2-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A502B8617D6892D00BAF4A5 /* libssh2-ios.a */; };
+		23A350A91C7C7CEE00872F8F /* ObjectiveGit.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F05AC51601209A00B7AD1D /* ObjectiveGit.m */; };
+		23A350AA1C7C7CEE00872F8F /* NSData+Git.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6C2267131459E700992935 /* NSData+Git.m */; };
+		23A350AB1C7C7CEE00872F8F /* NSError+Git.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE4C061130EFE2C00851650 /* NSError+Git.m */; };
+		23A350AC1C7C7CEE00872F8F /* NSString+Git.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C8057313874CDF004DCB0F /* NSString+Git.m */; };
+		23A350AD1C7C7CEE00872F8F /* NSDate+GTTimeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B1E7ED1703522100D0814D /* NSDate+GTTimeAdditions.m */; };
+		23A350AE1C7C7CEE00872F8F /* NSArray+StringArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DCBA7017B4791A009B0EBD /* NSArray+StringArray.m */; };
+		23A350AF1C7C7CEE00872F8F /* GTRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE4C063130EFE2C00851650 /* GTRepository.m */; };
+		23A350B01C7C7CEE00872F8F /* GTRepository+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DCBA6217B45A78009B0EBD /* GTRepository+Status.m */; };
+		23A350B11C7C7CEE00872F8F /* GTRepository+Reset.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BC0E4F18EF4F3600C7D0E6 /* GTRepository+Reset.m */; };
+		23A350B21C7C7CEE00872F8F /* GTStatusDelta.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DCBA5B17B45213009B0EBD /* GTStatusDelta.m */; };
+		23A350B31C7C7CEE00872F8F /* GTRepository+Stashing.m in Sources */ = {isa = PBXBuildFile; fileRef = D015F7C917F695E800AD5E1F /* GTRepository+Stashing.m */; };
+		23A350B41C7C7CEE00872F8F /* GTRepository+Committing.m in Sources */ = {isa = PBXBuildFile; fileRef = 88746CC317FA1C950005888A /* GTRepository+Committing.m */; };
+		23A350B51C7C7CEE00872F8F /* GTRepository+Pull.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D1BDED1B31FE7C00CDEC90 /* GTRepository+Pull.m */; };
+		23A350B61C7C7CEE00872F8F /* GTRepository+RemoteOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFB15A183AA8D600D1565E /* GTRepository+RemoteOperations.m */; };
+		23A350B71C7C7CEE00872F8F /* GTRepository+References.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B2131B1B20E785005CF2C5 /* GTRepository+References.m */; };
+		23A350B81C7C7CEE00872F8F /* GTEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD8AE6E13131B8800CB5D40 /* GTEnumerator.m */; };
+		23A350B91C7C7CEE00872F8F /* GTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6C22A81314625800992935 /* GTObject.m */; };
+		23A350BA1C7C7CEE00872F8F /* GTCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6C22A51314609A00992935 /* GTCommit.m */; };
+		23A350BB1C7C7CEF00872F8F /* GTSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6C254413148DC900992935 /* GTSignature.m */; };
+		23A350BC1C7C7CEF00872F8F /* GTBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD627981318391200DE34D1 /* GTBlob.m */; };
+		23A350BD1C7C7CEF00872F8F /* GTTree.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6B0410131496B8001909D0 /* GTTree.m */; };
+		23A350BE1C7C7CEF00872F8F /* GTTreeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6B0416131496CC001909D0 /* GTTreeEntry.m */; };
+		23A350BF1C7C7CEF00872F8F /* GTTreeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE612871745EE3300266D8C /* GTTreeBuilder.m */; };
+		23A350C01C7C7CEF00872F8F /* GTTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD62923131C03D600DE34D1 /* GTTag.m */; };
+		23A350C11C7C7CEF00872F8F /* GTIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFAF9C2131C1845000508BC /* GTIndex.m */; };
+		23A350C21C7C7CEF00872F8F /* GTIndexEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFAF9C8131C1868000508BC /* GTIndexEntry.m */; };
+		23A350C31C7C7CEF00872F8F /* GTReference.m in Sources */ = {isa = PBXBuildFile; fileRef = BD441E07131ED0C300187010 /* GTReference.m */; };
+		23A350C41C7C7CEF00872F8F /* GTBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F50F57132054D800584FBE /* GTBranch.m */; };
+		23A350C51C7C7CEF00872F8F /* GTObjectDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C8054D13861F34004DCB0F /* GTObjectDatabase.m */; };
+		23A350C61C7C7CEF00872F8F /* GTOdbObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AA046111134F4D2000DF526B /* GTOdbObject.m */; };
+		23A350C71C7C7CEF00872F8F /* GTConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EB7E4C14AEBA600046FEA4 /* GTConfiguration.m */; };
+		23A350C81C7C7CEF00872F8F /* GTRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CD6AA1600EBC600F57354 /* GTRemote.m */; };
+		23A350C91C7C7CEF00872F8F /* GTDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A3D6531667F11C00C49A39 /* GTDiff.m */; };
+		23A350CA1C7C7CEF00872F8F /* GTDiffFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3011D86A1668E48500CE3409 /* GTDiffFile.m */; };
+		23A350CB1C7C7CEF00872F8F /* GTDiffHunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 3011D8701668E78500CE3409 /* GTDiffHunk.m */; };
+		23A350CC1C7C7CEF00872F8F /* GTDiffDelta.m in Sources */ = {isa = PBXBuildFile; fileRef = 3011D8761668F29600CE3409 /* GTDiffDelta.m */; };
+		23A350CD1C7C7CEF00872F8F /* GTDiffLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FDC07E16835A8100654BF0 /* GTDiffLine.m */; };
+		23A350CE1C7C7CEF00872F8F /* GTDiffPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D03B57A018BFFF07007124F4 /* GTDiffPatch.m */; };
+		23A350CF1C7C7CEF00872F8F /* GTRepository+Blame.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F43DE218A2F667007D3621 /* GTRepository+Blame.m */; };
+		23A350D01C7C7CEF00872F8F /* GTBlame.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D9511182A81E1004AF532 /* GTBlame.m */; };
+		23A350D11C7C7CEF00872F8F /* GTBlameHunk.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3D951B182AB25C004AF532 /* GTBlameHunk.m */; };
+		23A350D21C7C7CEF00872F8F /* GTReflog.m in Sources */ = {isa = PBXBuildFile; fileRef = 882154681714740500D76B76 /* GTReflog.m */; };
+		23A350D31C7C7CEF00872F8F /* GTReflogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8821547517147A5200D76B76 /* GTReflogEntry.m */; };
+		23A350D41C7C7CEF00872F8F /* GTOID.m in Sources */ = {isa = PBXBuildFile; fileRef = 8821547C17147B3600D76B76 /* GTOID.m */; };
+		23A350D51C7C7CEF00872F8F /* GTSubmodule.m in Sources */ = {isa = PBXBuildFile; fileRef = D09C2E351755F16200065E36 /* GTSubmodule.m */; };
+		23A350D61C7C7CEF00872F8F /* GTCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D79C0ED17DF9F4D00997DE4 /* GTCredential.m */; };
+		23A350D71C7C7CEF00872F8F /* GTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 880EE66018AE700500B82455 /* GTFilter.m */; };
+		23A350D81C7C7CEF00872F8F /* GTFilterSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 886E622918AEBF75000611A0 /* GTFilterSource.m */; };
+		23A350D91C7C7CEF00872F8F /* GTFilterList.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CE551F18B6C58F008EB8E0 /* GTFilterList.m */; };
+		23A350DA1C7C7CEF00872F8F /* GTRepository+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E352FF1982E9160051001F /* GTRepository+Attributes.m */; };
+		23A350DB1C7C7CEF00872F8F /* GTFetchHeadEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEB51A0199D62B9001D72C0 /* GTFetchHeadEntry.m */; };
+		23A350DC1C7C7D1C00872F8F /* ObjectiveGit.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F6D9D81320451F00CC0BA8 /* ObjectiveGit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350DD1C7C7D1C00872F8F /* NSData+Git.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6C2266131459E700992935 /* NSData+Git.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350DE1C7C7D1C00872F8F /* NSError+Git.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE4C060130EFE2C00851650 /* NSError+Git.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350DF1C7C7D1C00872F8F /* NSString+Git.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C8057213874CDF004DCB0F /* NSString+Git.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E01C7C7D1C00872F8F /* NSDate+GTTimeAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B1E7EC1703522100D0814D /* NSDate+GTTimeAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E11C7C7D1C00872F8F /* NSArray+StringArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DCBA6F17B4791A009B0EBD /* NSArray+StringArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E21C7C7D1C00872F8F /* GTRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE4C062130EFE2C00851650 /* GTRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E31C7C7D1C00872F8F /* GTRepository+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE864341794A37E00371A65 /* GTRepository+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E41C7C7D1C00872F8F /* GTRepository+Status.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DCBA6117B45A78009B0EBD /* GTRepository+Status.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E51C7C7D1C00872F8F /* GTRepository+Reset.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BC0E4E18EF4F3600C7D0E6 /* GTRepository+Reset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E61C7C7D1C00872F8F /* GTStatusDelta.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DCBA5A17B45213009B0EBD /* GTStatusDelta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E71C7C7D1C00872F8F /* GTRepository+Stashing.h in Headers */ = {isa = PBXBuildFile; fileRef = D015F7C817F695E800AD5E1F /* GTRepository+Stashing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E81C7C7D1C00872F8F /* GTRepository+Committing.h in Headers */ = {isa = PBXBuildFile; fileRef = 88746CC217FA1C950005888A /* GTRepository+Committing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350E91C7C7D1C00872F8F /* GTRepository+Pull.h in Headers */ = {isa = PBXBuildFile; fileRef = F8D1BDEC1B31FE7C00CDEC90 /* GTRepository+Pull.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350EA1C7C7D1C00872F8F /* GTRepository+RemoteOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFFB159183AA8D600D1565E /* GTRepository+RemoteOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350EB1C7C7D1C00872F8F /* GTRepository+References.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B2131A1B20E785005CF2C5 /* GTRepository+References.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350EC1C7C7D1C00872F8F /* GTEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD8AE6D13131B8800CB5D40 /* GTEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350ED1C7C7D1C00872F8F /* GTObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6C22A71314625800992935 /* GTObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350EE1C7C7D1C00872F8F /* GTCommit.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6C22A41314609A00992935 /* GTCommit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350EF1C7C7D1C00872F8F /* GTSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6C254313148DC900992935 /* GTSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F01C7C7D1C00872F8F /* GTBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD627971318391200DE34D1 /* GTBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F11C7C7D1C00872F8F /* GTTree.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6B040F131496B8001909D0 /* GTTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F21C7C7D1C00872F8F /* GTTreeEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6B0415131496CC001909D0 /* GTTreeEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F31C7C7D1C00872F8F /* GTTreeBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE612861745EE3300266D8C /* GTTreeBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F41C7C7D1C00872F8F /* GTTag.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD62922131C03D600DE34D1 /* GTTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F51C7C7D1C00872F8F /* GTIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFAF9C1131C1845000508BC /* GTIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F61C7C7D1C00872F8F /* GTIndexEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFAF9C7131C1868000508BC /* GTIndexEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F71C7C7D1C00872F8F /* GTReference.h in Headers */ = {isa = PBXBuildFile; fileRef = BD441E06131ED0C300187010 /* GTReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F81C7C7D1C00872F8F /* GTBranch.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F50F56132054D800584FBE /* GTBranch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350F91C7C7D1C00872F8F /* GTObjectDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 55C8054C13861F34004DCB0F /* GTObjectDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350FA1C7C7D1C00872F8F /* GTOdbObject.h in Headers */ = {isa = PBXBuildFile; fileRef = AA046110134F4D2000DF526B /* GTOdbObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350FB1C7C7D1C00872F8F /* GTConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 88EB7E4B14AEBA600046FEA4 /* GTConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350FC1C7C7D1D00872F8F /* GTConfiguration+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 883CD6AE1600F01000F57354 /* GTConfiguration+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350FD1C7C7D1D00872F8F /* GTRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 883CD6A91600EBC600F57354 /* GTRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350FE1C7C7D1D00872F8F /* GTDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A3D6521667F11C00C49A39 /* GTDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A350FF1C7C7D1D00872F8F /* GTDiff+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D01EFDB6195E021800838D24 /* GTDiff+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351001C7C7D1D00872F8F /* GTDiffFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 3011D8691668E48500CE3409 /* GTDiffFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351011C7C7D1D00872F8F /* GTDiffHunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 3011D86F1668E78500CE3409 /* GTDiffHunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351021C7C7D1D00872F8F /* GTDiffDelta.h in Headers */ = {isa = PBXBuildFile; fileRef = 3011D8751668F29600CE3409 /* GTDiffDelta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351031C7C7D1D00872F8F /* GTDiffLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 30FDC07D16835A8100654BF0 /* GTDiffLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351041C7C7D1D00872F8F /* GTDiffPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = D03B579F18BFFF07007124F4 /* GTDiffPatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351051C7C7D1D00872F8F /* GTRepository+Blame.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F43DE118A2F667007D3621 /* GTRepository+Blame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351061C7C7D1D00872F8F /* GTBlame.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3D9510182A81E1004AF532 /* GTBlame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351071C7C7D1D00872F8F /* GTBlameHunk.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3D951A182AB25C004AF532 /* GTBlameHunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351081C7C7D1D00872F8F /* GTReflog.h in Headers */ = {isa = PBXBuildFile; fileRef = 882154671714740500D76B76 /* GTReflog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351091C7C7D1D00872F8F /* GTReflog+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 882154731714755500D76B76 /* GTReflog+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A3510A1C7C7D1E00872F8F /* GTReflogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 8821547417147A5100D76B76 /* GTReflogEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A3510B1C7C7D1E00872F8F /* GTReflogEntry+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8821547A17147A5F00D76B76 /* GTReflogEntry+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A3510C1C7C7D1E00872F8F /* GTOID.h in Headers */ = {isa = PBXBuildFile; fileRef = 8821547B17147B3600D76B76 /* GTOID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A3510D1C7C7D1E00872F8F /* GTSubmodule.h in Headers */ = {isa = PBXBuildFile; fileRef = D09C2E341755F16200065E36 /* GTSubmodule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A3510E1C7C7D1E00872F8F /* GTCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D79C0EC17DF9F4D00997DE4 /* GTCredential.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A3510F1C7C7D1E00872F8F /* GTCredential+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D79C0F617DFAA7100997DE4 /* GTCredential+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351101C7C7D1E00872F8F /* GTFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 880EE65F18AE700500B82455 /* GTFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351111C7C7D1E00872F8F /* GTFilterSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 886E622818AEBF75000611A0 /* GTFilterSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351121C7C7D1E00872F8F /* GTFilterList.h in Headers */ = {isa = PBXBuildFile; fileRef = D0CE551E18B6C58F008EB8E0 /* GTFilterList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351131C7C7D1E00872F8F /* GTRepository+Attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E352FE1982E9160051001F /* GTRepository+Attributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A351141C7C7D1E00872F8F /* GTFetchHeadEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EEB519F199D62B9001D72C0 /* GTFetchHeadEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3011D86B1668E48500CE3409 /* GTDiffFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 3011D8691668E48500CE3409 /* GTDiffFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3011D86D1668E48500CE3409 /* GTDiffFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3011D86A1668E48500CE3409 /* GTDiffFile.m */; };
 		3011D8711668E78500CE3409 /* GTDiffHunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 3011D86F1668E78500CE3409 /* GTDiffHunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -368,6 +482,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		23A350901C7C7BCD00872F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A350841C7C7BCD00872F8F;
+			remoteInfo = "ObjectiveGit tvOS";
+		};
+		23A350A01C7C7C4F00872F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0A330F216027F3600A616FA;
+			remoteInfo = "libgit2-iOS";
+		};
 		3D6123BD1A6432F6008F831A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -444,6 +572,10 @@
 		2089E43B17D9A58000F451DA /* GTTagSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTagSpec.m; sourceTree = "<group>"; };
 		20F43DE118A2F667007D3621 /* GTRepository+Blame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTRepository+Blame.h"; sourceTree = "<group>"; };
 		20F43DE218A2F667007D3621 /* GTRepository+Blame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTRepository+Blame.m"; sourceTree = "<group>"; };
+		23A350851C7C7BCD00872F8F /* ObjectiveGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A3508E1C7C7BCD00872F8F /* ObjectiveGit tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ObjectiveGit tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A350A21C7C7C6000872F8F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		23A350A41C7C7C6900872F8F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		3011D8691668E48500CE3409 /* GTDiffFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDiffFile.h; sourceTree = "<group>"; };
 		3011D86A1668E48500CE3409 /* GTDiffFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDiffFile.m; sourceTree = "<group>"; };
 		3011D86F1668E78500CE3409 /* GTDiffHunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDiffHunk.h; sourceTree = "<group>"; };
@@ -644,6 +776,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23A350811C7C7BCD00872F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A350A31C7C7C6000872F8F /* libiconv.tbd in Frameworks */,
+				23A350A51C7C7C6900872F8F /* libz.tbd in Frameworks */,
+				23A350A71C7C7CC000872F8F /* libssl.a in Frameworks */,
+				23A350A61C7C7CC000872F8F /* libcrypto.a in Frameworks */,
+				23A350A81C7C7CD100872F8F /* libssh2-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A3508B1C7C7BCD00872F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A3508F1C7C7BCD00872F8F /* ObjectiveGit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88F05A6716011E5400B7AD1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -697,6 +849,8 @@
 				88F05A6B16011E5400B7AD1D /* ObjectiveGit-MacTests.xctest */,
 				D01B6ED319F82E2000D411BC /* ObjectiveGit.framework */,
 				F879D8361B4B7F7C002D5C07 /* ObjectiveGit-iOSTests.xctest */,
+				23A350851C7C7BCD00872F8F /* ObjectiveGit.framework */,
+				23A3508E1C7C7BCD00872F8F /* ObjectiveGit tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -704,6 +858,8 @@
 		0867D691FE84028FC02AAC07 /* ObjectiveGitFramework */ = {
 			isa = PBXGroup;
 			children = (
+				23A350A41C7C7C6900872F8F /* libz.tbd */,
+				23A350A21C7C7C6000872F8F /* libiconv.tbd */,
 				BDD8AB01130F01AB00CB5D40 /* README.md */,
 				887B948D1A3A38130070D41D /* ObjectiveGit.modulemap */,
 				BDE4C05E130EFE2C00851650 /* ObjectiveGit */,
@@ -1051,6 +1207,70 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		23A350821C7C7BCD00872F8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A350DC1C7C7D1C00872F8F /* ObjectiveGit.h in Headers */,
+				23A350DD1C7C7D1C00872F8F /* NSData+Git.h in Headers */,
+				23A350DE1C7C7D1C00872F8F /* NSError+Git.h in Headers */,
+				23A350DF1C7C7D1C00872F8F /* NSString+Git.h in Headers */,
+				23A350E01C7C7D1C00872F8F /* NSDate+GTTimeAdditions.h in Headers */,
+				23A350E11C7C7D1C00872F8F /* NSArray+StringArray.h in Headers */,
+				23A350E21C7C7D1C00872F8F /* GTRepository.h in Headers */,
+				23A350E31C7C7D1C00872F8F /* GTRepository+Private.h in Headers */,
+				23A350E41C7C7D1C00872F8F /* GTRepository+Status.h in Headers */,
+				23A350E51C7C7D1C00872F8F /* GTRepository+Reset.h in Headers */,
+				23A350E61C7C7D1C00872F8F /* GTStatusDelta.h in Headers */,
+				23A350E71C7C7D1C00872F8F /* GTRepository+Stashing.h in Headers */,
+				23A350E81C7C7D1C00872F8F /* GTRepository+Committing.h in Headers */,
+				23A350E91C7C7D1C00872F8F /* GTRepository+Pull.h in Headers */,
+				23A350EA1C7C7D1C00872F8F /* GTRepository+RemoteOperations.h in Headers */,
+				23A350EB1C7C7D1C00872F8F /* GTRepository+References.h in Headers */,
+				23A350EC1C7C7D1C00872F8F /* GTEnumerator.h in Headers */,
+				23A350ED1C7C7D1C00872F8F /* GTObject.h in Headers */,
+				23A350EE1C7C7D1C00872F8F /* GTCommit.h in Headers */,
+				23A350EF1C7C7D1C00872F8F /* GTSignature.h in Headers */,
+				23A350F01C7C7D1C00872F8F /* GTBlob.h in Headers */,
+				23A350F11C7C7D1C00872F8F /* GTTree.h in Headers */,
+				23A350F21C7C7D1C00872F8F /* GTTreeEntry.h in Headers */,
+				23A350F31C7C7D1C00872F8F /* GTTreeBuilder.h in Headers */,
+				23A350F41C7C7D1C00872F8F /* GTTag.h in Headers */,
+				23A350F51C7C7D1C00872F8F /* GTIndex.h in Headers */,
+				23A350F61C7C7D1C00872F8F /* GTIndexEntry.h in Headers */,
+				23A350F71C7C7D1C00872F8F /* GTReference.h in Headers */,
+				23A350F81C7C7D1C00872F8F /* GTBranch.h in Headers */,
+				23A350F91C7C7D1C00872F8F /* GTObjectDatabase.h in Headers */,
+				23A350FA1C7C7D1C00872F8F /* GTOdbObject.h in Headers */,
+				23A350FB1C7C7D1C00872F8F /* GTConfiguration.h in Headers */,
+				23A350FC1C7C7D1D00872F8F /* GTConfiguration+Private.h in Headers */,
+				23A350FD1C7C7D1D00872F8F /* GTRemote.h in Headers */,
+				23A350FE1C7C7D1D00872F8F /* GTDiff.h in Headers */,
+				23A350FF1C7C7D1D00872F8F /* GTDiff+Private.h in Headers */,
+				23A351001C7C7D1D00872F8F /* GTDiffFile.h in Headers */,
+				23A351011C7C7D1D00872F8F /* GTDiffHunk.h in Headers */,
+				23A351021C7C7D1D00872F8F /* GTDiffDelta.h in Headers */,
+				23A351031C7C7D1D00872F8F /* GTDiffLine.h in Headers */,
+				23A351041C7C7D1D00872F8F /* GTDiffPatch.h in Headers */,
+				23A351051C7C7D1D00872F8F /* GTRepository+Blame.h in Headers */,
+				23A351061C7C7D1D00872F8F /* GTBlame.h in Headers */,
+				23A351071C7C7D1D00872F8F /* GTBlameHunk.h in Headers */,
+				23A351081C7C7D1D00872F8F /* GTReflog.h in Headers */,
+				23A351091C7C7D1D00872F8F /* GTReflog+Private.h in Headers */,
+				23A3510A1C7C7D1E00872F8F /* GTReflogEntry.h in Headers */,
+				23A3510B1C7C7D1E00872F8F /* GTReflogEntry+Private.h in Headers */,
+				23A3510C1C7C7D1E00872F8F /* GTOID.h in Headers */,
+				23A3510D1C7C7D1E00872F8F /* GTSubmodule.h in Headers */,
+				23A3510E1C7C7D1E00872F8F /* GTCredential.h in Headers */,
+				23A3510F1C7C7D1E00872F8F /* GTCredential+Private.h in Headers */,
+				23A351101C7C7D1E00872F8F /* GTFilter.h in Headers */,
+				23A351111C7C7D1E00872F8F /* GTFilterSource.h in Headers */,
+				23A351121C7C7D1E00872F8F /* GTFilterList.h in Headers */,
+				23A351131C7C7D1E00872F8F /* GTRepository+Attributes.h in Headers */,
+				23A351141C7C7D1E00872F8F /* GTFetchHeadEntry.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF500486A6940098B216 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1173,6 +1393,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		23A350841C7C7BCD00872F8F /* ObjectiveGit tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A3509E1C7C7BCD00872F8F /* Build configuration list for PBXNativeTarget "ObjectiveGit tvOS" */;
+			buildPhases = (
+				23A350801C7C7BCD00872F8F /* Sources */,
+				23A350811C7C7BCD00872F8F /* Frameworks */,
+				23A350821C7C7BCD00872F8F /* Headers */,
+				23A350831C7C7BCD00872F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A350A11C7C7C4F00872F8F /* PBXTargetDependency */,
+			);
+			name = "ObjectiveGit tvOS";
+			productName = "ObjectiveGit tvOS";
+			productReference = 23A350851C7C7BCD00872F8F /* ObjectiveGit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23A3508D1C7C7BCD00872F8F /* ObjectiveGit tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A3509F1C7C7BCD00872F8F /* Build configuration list for PBXNativeTarget "ObjectiveGit tvOSTests" */;
+			buildPhases = (
+				23A3508A1C7C7BCD00872F8F /* Sources */,
+				23A3508B1C7C7BCD00872F8F /* Frameworks */,
+				23A3508C1C7C7BCD00872F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A350911C7C7BCD00872F8F /* PBXTargetDependency */,
+			);
+			name = "ObjectiveGit tvOSTests";
+			productName = "ObjectiveGit tvOSTests";
+			productReference = 23A3508E1C7C7BCD00872F8F /* ObjectiveGit tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		88F05A6A16011E5400B7AD1D /* ObjectiveGit-MacTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88F05A7F16011E5400B7AD1D /* Build configuration list for PBXNativeTarget "ObjectiveGit-MacTests" */;
@@ -1260,6 +1517,12 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "GitHub, Inc";
 				TargetAttributes = {
+					23A350841C7C7BCD00872F8F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					23A3508D1C7C7BCD00872F8F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					D01B6ED219F82E2000D411BC = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -1288,6 +1551,8 @@
 				88F05A6A16011E5400B7AD1D /* ObjectiveGit-MacTests */,
 				D01B6ED219F82E2000D411BC /* ObjectiveGit-iOS */,
 				F879D8351B4B7F7C002D5C07 /* ObjectiveGit-iOSTests */,
+				23A350841C7C7BCD00872F8F /* ObjectiveGit tvOS */,
+				23A3508D1C7C7BCD00872F8F /* ObjectiveGit tvOSTests */,
 				D0A330ED16027F1E00A616FA /* libgit2 */,
 				D0A330F216027F3600A616FA /* libgit2-iOS */,
 				6A28265217C69CB400C6A948 /* OpenSSL-iOS */,
@@ -1297,6 +1562,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		23A350831C7C7BCD00872F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A3508C1C7C7BCD00872F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88F05A6816011E5400B7AD1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1383,6 +1662,71 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		23A350801C7C7BCD00872F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A350A91C7C7CEE00872F8F /* ObjectiveGit.m in Sources */,
+				23A350AA1C7C7CEE00872F8F /* NSData+Git.m in Sources */,
+				23A350AB1C7C7CEE00872F8F /* NSError+Git.m in Sources */,
+				23A350AC1C7C7CEE00872F8F /* NSString+Git.m in Sources */,
+				23A350AD1C7C7CEE00872F8F /* NSDate+GTTimeAdditions.m in Sources */,
+				23A350AE1C7C7CEE00872F8F /* NSArray+StringArray.m in Sources */,
+				23A350AF1C7C7CEE00872F8F /* GTRepository.m in Sources */,
+				23A350B01C7C7CEE00872F8F /* GTRepository+Status.m in Sources */,
+				23A350B11C7C7CEE00872F8F /* GTRepository+Reset.m in Sources */,
+				23A350B21C7C7CEE00872F8F /* GTStatusDelta.m in Sources */,
+				23A350B31C7C7CEE00872F8F /* GTRepository+Stashing.m in Sources */,
+				23A350B41C7C7CEE00872F8F /* GTRepository+Committing.m in Sources */,
+				23A350B51C7C7CEE00872F8F /* GTRepository+Pull.m in Sources */,
+				23A350B61C7C7CEE00872F8F /* GTRepository+RemoteOperations.m in Sources */,
+				23A350B71C7C7CEE00872F8F /* GTRepository+References.m in Sources */,
+				23A350B81C7C7CEE00872F8F /* GTEnumerator.m in Sources */,
+				23A350B91C7C7CEE00872F8F /* GTObject.m in Sources */,
+				23A350BA1C7C7CEE00872F8F /* GTCommit.m in Sources */,
+				23A350BB1C7C7CEF00872F8F /* GTSignature.m in Sources */,
+				23A350BC1C7C7CEF00872F8F /* GTBlob.m in Sources */,
+				23A350BD1C7C7CEF00872F8F /* GTTree.m in Sources */,
+				23A350BE1C7C7CEF00872F8F /* GTTreeEntry.m in Sources */,
+				23A350BF1C7C7CEF00872F8F /* GTTreeBuilder.m in Sources */,
+				23A350C01C7C7CEF00872F8F /* GTTag.m in Sources */,
+				23A350C11C7C7CEF00872F8F /* GTIndex.m in Sources */,
+				23A350C21C7C7CEF00872F8F /* GTIndexEntry.m in Sources */,
+				23A350C31C7C7CEF00872F8F /* GTReference.m in Sources */,
+				23A350C41C7C7CEF00872F8F /* GTBranch.m in Sources */,
+				23A350C51C7C7CEF00872F8F /* GTObjectDatabase.m in Sources */,
+				23A350C61C7C7CEF00872F8F /* GTOdbObject.m in Sources */,
+				23A350C71C7C7CEF00872F8F /* GTConfiguration.m in Sources */,
+				23A350C81C7C7CEF00872F8F /* GTRemote.m in Sources */,
+				23A350C91C7C7CEF00872F8F /* GTDiff.m in Sources */,
+				23A350CA1C7C7CEF00872F8F /* GTDiffFile.m in Sources */,
+				23A350CB1C7C7CEF00872F8F /* GTDiffHunk.m in Sources */,
+				23A350CC1C7C7CEF00872F8F /* GTDiffDelta.m in Sources */,
+				23A350CD1C7C7CEF00872F8F /* GTDiffLine.m in Sources */,
+				23A350CE1C7C7CEF00872F8F /* GTDiffPatch.m in Sources */,
+				23A350CF1C7C7CEF00872F8F /* GTRepository+Blame.m in Sources */,
+				23A350D01C7C7CEF00872F8F /* GTBlame.m in Sources */,
+				23A350D11C7C7CEF00872F8F /* GTBlameHunk.m in Sources */,
+				23A350D21C7C7CEF00872F8F /* GTReflog.m in Sources */,
+				23A350D31C7C7CEF00872F8F /* GTReflogEntry.m in Sources */,
+				23A350D41C7C7CEF00872F8F /* GTOID.m in Sources */,
+				23A350D51C7C7CEF00872F8F /* GTSubmodule.m in Sources */,
+				23A350D61C7C7CEF00872F8F /* GTCredential.m in Sources */,
+				23A350D71C7C7CEF00872F8F /* GTFilter.m in Sources */,
+				23A350D81C7C7CEF00872F8F /* GTFilterSource.m in Sources */,
+				23A350D91C7C7CEF00872F8F /* GTFilterList.m in Sources */,
+				23A350DA1C7C7CEF00872F8F /* GTRepository+Attributes.m in Sources */,
+				23A350DB1C7C7CEF00872F8F /* GTFetchHeadEntry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A3508A1C7C7BCD00872F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88F05A6616011E5400B7AD1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1598,6 +1942,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		23A350911C7C7BCD00872F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A350841C7C7BCD00872F8F /* ObjectiveGit tvOS */;
+			targetProxy = 23A350901C7C7BCD00872F8F /* PBXContainerItemProxy */;
+		};
+		23A350A11C7C7C4F00872F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0A330F216027F3600A616FA /* libgit2-iOS */;
+			targetProxy = 23A350A01C7C7C4F00872F8F /* PBXContainerItemProxy */;
+		};
 		3D6123BE1A6432F6008F831A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D0A330ED16027F1E00A616FA /* libgit2 */;
@@ -1751,6 +2105,426 @@
 				);
 			};
 			name = Release;
+		};
+		23A350961C7C7BCD00872F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"External/libssh2-ios/include/libssh2",
+					External/libgit2/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"External/ios-openssl/lib",
+					"External/libssh2-ios/lib",
+					"External/libgit2-ios",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					"-lgit2-ios",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.libgit2.ObjectiveGit;
+				PRODUCT_NAME = ObjectiveGit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23A350971C7C7BCD00872F8F /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"External/libssh2-ios/include/libssh2",
+					External/libgit2/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"External/ios-openssl/lib",
+					"External/libssh2-ios/lib",
+					"External/libgit2-ios",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lgit2-ios",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.libgit2.ObjectiveGit;
+				PRODUCT_NAME = ObjectiveGit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
+		23A350981C7C7BCD00872F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"External/libssh2-ios/include/libssh2",
+					External/libgit2/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"External/ios-openssl/lib",
+					"External/libssh2-ios/lib",
+					"External/libgit2-ios",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lgit2-ios",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.libgit2.ObjectiveGit;
+				PRODUCT_NAME = ObjectiveGit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		23A350991C7C7BCD00872F8F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"External/libssh2-ios/include/libssh2",
+					External/libgit2/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"External/ios-openssl/lib",
+					"External/libssh2-ios/lib",
+					"External/libgit2-ios",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lgit2-ios",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.libgit2.ObjectiveGit;
+				PRODUCT_NAME = ObjectiveGit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		23A3509A1C7C7BCD00872F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ObjectiveGit tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.ObjectiveGit-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		23A3509B1C7C7BCD00872F8F /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ObjectiveGit tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.ObjectiveGit-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Test;
+		};
+		23A3509C1C7C7BCD00872F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ObjectiveGit tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.ObjectiveGit-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23A3509D1C7C7BCD00872F8F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ObjectiveGit tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.ObjectiveGit-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
 		};
 		6A28265517C69CB400C6A948 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2423,6 +3197,26 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		23A3509E1C7C7BCD00872F8F /* Build configuration list for PBXNativeTarget "ObjectiveGit tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A350961C7C7BCD00872F8F /* Debug */,
+				23A350971C7C7BCD00872F8F /* Test */,
+				23A350981C7C7BCD00872F8F /* Release */,
+				23A350991C7C7BCD00872F8F /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		23A3509F1C7C7BCD00872F8F /* Build configuration list for PBXNativeTarget "ObjectiveGit tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A3509A1C7C7BCD00872F8F /* Debug */,
+				23A3509B1C7C7BCD00872F8F /* Test */,
+				23A3509C1C7C7BCD00872F8F /* Release */,
+				23A3509D1C7C7BCD00872F8F /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		6A28265417C69CB400C6A948 /* Build configuration list for PBXAggregateTarget "OpenSSL-iOS" */ = {
 			isa = XCConfigurationList;
