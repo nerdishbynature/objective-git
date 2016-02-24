@@ -98,9 +98,10 @@
 		2330831D1C7D68BC00317CB7 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A350A21C7C7C6000872F8F /* libiconv.tbd */; };
 		2330831E1C7D68C100317CB7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A350A41C7C7C6900872F8F /* libz.tbd */; };
 		233083211C7D68E300317CB7 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2330831F1C7D68E300317CB7 /* libcrypto.a */; };
-		233083221C7D68E300317CB7 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233083201C7D68E300317CB7 /* libssl.a */; };
 		233083241C7D68F400317CB7 /* libssh2-tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233083231C7D68F400317CB7 /* libssh2-tvos.a */; };
 		233083261C7D68FE00317CB7 /* libgit2-tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233083251C7D68FE00317CB7 /* libgit2-tvos.a */; };
+		233083271C7D908600317CB7 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233083201C7D68E300317CB7 /* libssl.a */; };
+		233083281C7D914300317CB7 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 306123AA17EA5261006591D4 /* EXTScope.m */; };
 		23A3508F1C7C7BCD00872F8F /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A350851C7C7BCD00872F8F /* ObjectiveGit.framework */; };
 		23A350A91C7C7CEE00872F8F /* ObjectiveGit.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F05AC51601209A00B7AD1D /* ObjectiveGit.m */; };
 		23A350AA1C7C7CEE00872F8F /* NSData+Git.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6C2267131459E700992935 /* NSData+Git.m */; };
@@ -841,9 +842,9 @@
 				233083261C7D68FE00317CB7 /* libgit2-tvos.a in Frameworks */,
 				233083241C7D68F400317CB7 /* libssh2-tvos.a in Frameworks */,
 				233083211C7D68E300317CB7 /* libcrypto.a in Frameworks */,
-				233083221C7D68E300317CB7 /* libssl.a in Frameworks */,
 				2330831E1C7D68C100317CB7 /* libz.tbd in Frameworks */,
 				2330831D1C7D68BC00317CB7 /* libiconv.tbd in Frameworks */,
+				233083271C7D908600317CB7 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1778,6 +1779,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233083281C7D914300317CB7 /* EXTScope.m in Sources */,
 				23A350A91C7C7CEE00872F8F /* ObjectiveGit.m in Sources */,
 				23A350AA1C7C7CEE00872F8F /* NSData+Git.m in Sources */,
 				23A350AB1C7C7CEE00872F8F /* NSError+Git.m in Sources */,
@@ -2269,16 +2271,15 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"External/libssh2-ios/include/libssh2",
-					External/libgit2/include,
+					"External/libgit2-tvos/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/External/tvos-openssl/lib",
-					"$(PROJECT_DIR)/External/libssh2-tvos/lib",
-					"$(PROJECT_DIR)/External/libgit2-tvos",
+					"External/tvos-openssl/lib",
+					"External/libssh2-tvos/lib",
+					"External/libgit2-tvos",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
@@ -2332,16 +2333,15 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"External/libssh2-ios/include/libssh2",
-					External/libgit2/include,
+					"External/libgit2-tvos/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/External/tvos-openssl/lib",
-					"$(PROJECT_DIR)/External/libssh2-tvos/lib",
-					"$(PROJECT_DIR)/External/libgit2-tvos",
+					"External/tvos-openssl/lib",
+					"External/libssh2-tvos/lib",
+					"External/libgit2-tvos",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
@@ -2396,16 +2396,15 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"External/libssh2-ios/include/libssh2",
-					External/libgit2/include,
+					"External/libgit2-tvos/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/External/tvos-openssl/lib",
-					"$(PROJECT_DIR)/External/libssh2-tvos/lib",
-					"$(PROJECT_DIR)/External/libgit2-tvos",
+					"External/tvos-openssl/lib",
+					"External/libssh2-tvos/lib",
+					"External/libgit2-tvos",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
@@ -2460,16 +2459,15 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"External/libssh2-ios/include/libssh2",
-					External/libgit2/include,
+					"External/libgit2-tvos/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/External/tvos-openssl/lib",
-					"$(PROJECT_DIR)/External/libssh2-tvos/lib",
-					"$(PROJECT_DIR)/External/libgit2-tvos",
+					"External/tvos-openssl/lib",
+					"External/libssh2-tvos/lib",
+					"External/libgit2-tvos",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
