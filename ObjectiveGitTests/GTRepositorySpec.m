@@ -14,6 +14,10 @@
 
 QuickSpecBegin(GTRepositorySpec)
 
+static NSString * const readmeFile = @"README.md";
+static NSString * const readme1File = @"README1.txt";
+
+
 __block GTRepository *repository;
 
 beforeEach(^{
@@ -354,6 +358,58 @@ describe(@"-OIDByCreatingTagNamed:target:tagger:message:error", ^{
 	});
 });
 
+describe(@"move head", ^{
+	beforeEach(^{
+		repository = self.testAppFixtureRepository;
+	});
+
+	//- (BOOL)moveHEADToReference:(GTReference *)reference error:(NSError **)error;
+	it(@"should move to reference", ^{
+		NSError *error = nil;
+		GTReference *originalHead = [repository headReferenceWithError:NULL];
+
+		GTReference *targetReference = [repository lookUpReferenceWithName:@"refs/heads/other-branch" error:NULL];
+		expect(targetReference).notTo(beNil());
+
+		// -> Test the move
+		BOOL success = [repository moveHEADToReference:targetReference error:&error];
+		expect(@(success)).to(beTruthy());
+		expect(error).to(beNil());
+
+		// Verify
+		GTReference *head = [repository headReferenceWithError:&error];
+		expect(head).notTo(beNil());
+		expect(head).notTo(equal(originalHead));
+		expect(head.targetOID.SHA).to(equal(targetReference.targetOID.SHA));
+	});
+
+	//- (BOOL)moveHEADToCommit:(GTCommit *)commit error:(NSError **)error;
+	it(@"should move to commit", ^{
+		NSError *error = nil;
+		GTReference *originalHead = [repository headReferenceWithError:NULL];
+		NSString *targetCommitSHA = @"f7ecd8f4404d3a388efbff6711f1bdf28ffd16a0";
+
+		GTCommit *commit = [repository lookUpObjectBySHA:targetCommitSHA error:NULL];
+		expect(commit).notTo(beNil());
+
+		GTCommit *originalHeadCommit = [repository lookUpObjectByOID:originalHead.targetOID error:NULL];
+		expect(originalHeadCommit).notTo(beNil());
+
+		// -> Test the move
+		BOOL success = [repository moveHEADToCommit:commit error:&error];
+		expect(@(success)).to(beTruthy());
+		expect(error).to(beNil());
+
+		// Test for detached?
+
+		// Verify
+		GTReference *head = [repository headReferenceWithError:&error];
+		expect(head).notTo(beNil());
+		expect(head.targetOID.SHA).to(equal(targetCommitSHA));
+	});
+});
+
+
 describe(@"-checkout:strategy:error:progressBlock:", ^{
 	it(@"should allow references", ^{
 		NSError *error = nil;
@@ -373,6 +429,58 @@ describe(@"-checkout:strategy:error:progressBlock:", ^{
 		BOOL result = [repository checkoutCommit:commit strategy:GTCheckoutStrategyAllowConflicts error:&error progressBlock:nil];
 		expect(@(result)).to(beTruthy());
 		expect(error.localizedDescription).to(beNil());
+	});
+});
+
+describe(@"-checkout:strategy:notifyFlags:error:notifyBlock:progressBlock:", ^{
+	it(@"should fail ref checkout with conflict and notify", ^{
+		NSError *error = nil;
+		GTReference *ref = [repository lookUpReferenceWithName:@"refs/heads/other-branch" error:&error];
+		expect(ref).notTo(beNil());
+		expect(error.localizedDescription).to(beNil());
+		BOOL writeResult = [@"Conflicting data in README.md\n" writeToURL:[repository.fileURL URLByAppendingPathComponent:readmeFile] atomically:YES encoding:NSUTF8StringEncoding error:&error];
+		expect(@(writeResult)).to(beTruthy());
+		__block NSUInteger notifyCount = 0;
+		__block BOOL readmeFileConflicted = NO;
+		int (^notifyBlock)(GTCheckoutNotifyFlags, NSString *, GTDiffFile *, GTDiffFile *, GTDiffFile *);
+		notifyBlock = ^(GTCheckoutNotifyFlags why, NSString *path, GTDiffFile *baseline, GTDiffFile *target, GTDiffFile *workdir) {
+			notifyCount++;
+			if([path isEqualToString:readmeFile] && (why & GTCheckoutNotifyConflict)) {
+				readmeFileConflicted = YES;
+			}
+			return 0;
+		};
+
+		BOOL result = [repository checkoutReference:ref strategy:GTCheckoutStrategySafe notifyFlags:GTCheckoutNotifyConflict error:&error progressBlock:nil notifyBlock:notifyBlock];
+		expect(@(notifyCount)).to(equal(@(1)));
+		expect(@(readmeFileConflicted)).to(beTruthy());
+		expect(@(result)).to(beFalsy());
+		expect(@(error.code)).to(equal(@(GIT_ECONFLICT)));
+	});
+
+	it(@"should fail commit checkout with conflict and notify", ^{
+		NSError *error = nil;
+		GTCommit *commit = [repository lookUpObjectBySHA:@"1d69f3c0aeaf0d62e25591987b93b8ffc53abd77" objectType:GTObjectTypeCommit error:&error];
+		expect(commit).notTo(beNil());
+		expect(error.localizedDescription).to(beNil());
+		BOOL writeResult = [@"Conflicting data in README1.txt\n" writeToURL:[repository.fileURL URLByAppendingPathComponent:readme1File] atomically:YES encoding:NSUTF8StringEncoding error:&error];
+		expect(@(writeResult)).to(beTruthy());
+		__block NSUInteger notifyCount = 0;
+		__block BOOL readme1FileConflicted = NO;
+		int (^notifyBlock)(GTCheckoutNotifyFlags, NSString *, GTDiffFile *, GTDiffFile *, GTDiffFile *);
+		notifyBlock = ^(GTCheckoutNotifyFlags why, NSString *path, GTDiffFile *baseline, GTDiffFile *target, GTDiffFile *workdir) {
+			notifyCount++;
+			if([path isEqualToString:readme1File] && (why & GTCheckoutNotifyConflict)) {
+				readme1FileConflicted = YES;
+			}
+			return 0;
+		};
+
+		BOOL result = [repository checkoutCommit:commit strategy:GTCheckoutStrategySafe notifyFlags:GTCheckoutNotifyConflict error:&error progressBlock:nil notifyBlock:notifyBlock];
+		expect(@(notifyCount)).to(equal(@(1)));
+		expect(@(readme1FileConflicted)).to(beTruthy());
+		expect(@(result)).to(beFalsy());
+		expect(@(error.code)).to(equal(@(GIT_ECONFLICT)));
 	});
 });
 

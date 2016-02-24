@@ -29,6 +29,21 @@ function ios_sdk_version ()
     /usr/bin/xcodebuild -version -sdk 2> /dev/null | grep -A 1 '^iPhone' | tail -n 1 |  awk '{ print $2 }' 
 }
 
+# Returns the latest iOS SDK version available via xcodebuild.
+function tvos_sdk_version ()
+{
+    # The grep command produces output like the following, singling out the
+    # SDKVersion of just the iPhone* SDKs:
+    #
+    #   iPhoneOS9.0.sdk - iOS 9.0 (iphoneos9.0)
+    #   SDKVersion: 9.0
+    #   --
+    #   iPhoneSimulator9.0.sdk - Simulator - iOS 9.0 (iphonesimulator9.0)
+    #   SDKVersion: 9.0
+
+    /usr/bin/xcodebuild -version -sdk 2> /dev/null | grep -A 1 '^AppleTV' | tail -n 1 |  awk '{ print $2 }' 
+}
+
 # Returns the path to the specified iOS SDK name
 function ios_sdk_path ()
 {

@@ -92,7 +92,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// error       - If not NULL, set to any error that occurs.
 ///
 /// Returns a (possibly empty) array of GTCommits, or nil if an error occurs.
-- (nullable NSArray *)uniqueCommitsRelativeToBranch:(GTBranch *)otherBranch error:(NSError **)error;
+- (nullable NSArray<GTCommit *> *)uniqueCommitsRelativeToBranch:(GTBranch *)otherBranch error:(NSError **)error;
 
 /// Deletes the local branch and nils out the reference.
 - (BOOL)deleteWithError:(NSError **)error;
@@ -131,9 +131,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// Returns whether the calculation was successful.
 - (BOOL)calculateAhead:(size_t *)ahead behind:(size_t *)behind relativeTo:(GTBranch *)branch error:(NSError **)error;
-
-#pragma mark Deprecations
-- (nullable GTCommit *)targetCommitAndReturnError:(NSError **)error __deprecated_msg("use targetCommitWithError: instead.");
 
 @end
 
