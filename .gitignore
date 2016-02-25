@@ -9,8 +9,10 @@ build-iPhoneOS/*
 objective-git.bridgesupport
 ObjectiveGitFramework/build/*
 ObjectiveGit-iOS.framework/*
+ObjectiveGit-tvOS.framework/*
 External/libgit2*.a
 External/libgit2-ios
+External/libgit2-tvos
 
 *.pbxuser
 *.perspective
@@ -29,6 +31,9 @@ ObjectiveGitTests/fixtures/Fixtures/*
 External/ios-openssl/include
 External/ios-openssl/lib
 External/libssh2-ios
+External/tvos-openssl/include
+External/tvos-openssl/lib
+External/libssh2-tvos
 
 Carthage/Build
 

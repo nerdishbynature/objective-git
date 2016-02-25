@@ -4,18 +4,18 @@ set -e
 
 # source the common build functions
 SCRIPT_DIR=$(dirname "$0")
-source "${SCRIPT_DIR}/ios_build_functions.sh"
+source "${SCRIPT_DIR}/tvos_build_functions.sh"
 
 function setup ()
 {
-    if [ "${ROOT_PATH}/External/libgit2-ios/libgit2-ios.a" -nt "${ROOT_PATH}/External/libgit2" ]
+    if [ "${ROOT_PATH}/External/libgit2-tvos/libgit2-tvos.a" -nt "${ROOT_PATH}/External/libgit2" ]
     then
         echo "No update needed."
         exit 0
     fi
 
     LIBRARY_NAME="libgit2"
-    LIB_PATH="${ROOT_PATH}/External/libgit2-ios"
+    LIB_PATH="${ROOT_PATH}/External/libgit2-tvos"
     rm -rf "${LIB_PATH}"
 
     pushd "${ROOT_PATH}/External/libgit2" > /dev/null
@@ -45,7 +45,7 @@ function build_libgit2 ()
     cmake \
         -DCMAKE_C_COMPILER_WORKS:BOOL=ON \
         -DBUILD_SHARED_LIBS:BOOL=OFF \
-        -DCMAKE_PREFIX_PATH:PATH="${ROOT_PATH}/External/libssh2-ios/bin/${SDKNAME}-${ARCH}.sdk" \
+        -DCMAKE_PREFIX_PATH:PATH="${ROOT_PATH}/External/libssh2-tvos/bin/${SDKNAME}-${ARCH}.sdk" \
         -DPKG_CONFIG_USE_CMAKE_PREFIX_PATH:BOOL=ON \
         -DCMAKE_INSTALL_PREFIX:PATH="${INSTALL_PREFIX}/" \
         -DBUILD_CLAR:BOOL=OFF \
@@ -54,7 +54,7 @@ function build_libgit2 ()
         -DCMAKE_C_FLAGS:STRING="-fembed-bitcode" \
         "${SYS_ROOT}" \
         -DCMAKE_OSX_ARCHITECTURES:STRING="${ARCH}" \
-        .. >> "${LOG}" 2>&1
+        .. >> "${LOG}" 2>&1 >> "${LOG}" 2>&1
     cmake --build . --target install >> "${LOG}" 2>&1
 
     # push the built library into the list
@@ -66,7 +66,7 @@ function fat_binary ()
 {
     echo "Building fat binary..."
 
-    lipo -create "${BUILT_LIB_PATHS[@]}" -output "${ROOT_PATH}/External/libgit2-ios/libgit2-ios.a"
+    lipo -create "${BUILT_LIB_PATHS[@]}" -output "${ROOT_PATH}/External/libgit2-tvos/libgit2-tvos.a"
 
     echo "Building done."
 
